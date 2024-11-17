@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.product-card {
+  width: 150px;
+    height: 170px;
+    place-items: center;
+    border: 1px solid #333;
+    border-radius: 4px;
+    /* padding: 5px; */
+    padding-top: 15px;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  /* justify-content: center; */
+  padding: 20px;
+}
+img, video {
+  max-width: 100px;
+  height: 100px;
+  width: 200px;
+  border-radius: 4px;
+}
+h3.pdtlength {
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card:hover .tooltip {
+  opacity: 1;
+}
+.txtct{
+ /* text-align: center;*/
+}
+.fntpd{
+  margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-style: revert;
+}
